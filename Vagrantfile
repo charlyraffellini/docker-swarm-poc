@@ -3,7 +3,7 @@
 Vagrant.configure("2") do |config|
 
     config.vm.box = "ubuntu/xenial64"
-    config.vm.provision "bash", path: "provisioning/node.bash", privileged: true
+    config.vm.provision "shell", path: "provisioning/node.bash", privileged: true
 
     (1..3).each do |sequence|
         config.vm.define "m#{sequence}" do |node|
