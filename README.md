@@ -1,5 +1,4 @@
 # docker-swarm-poc
-Prove of concept of docker swarm
 
 In order to run vagrant in this example you need to have Virtual Box installed.
 
@@ -13,7 +12,7 @@ Also, we can hit the manager IPs with `192.168.99.20#{1,2}` and the worker IPs w
 
 For instance, supose I want to refer the manager 1 then the adress of it is `192.168.99.201` or the adress of the worker 3 is `192.168.99.213`.
 
-Wde are going to run `vagrant up m1 m2 w1 w2` to bring one manager and two workers live. Or you can run `vagrant up` to turn on all of the machines.
+We are going to run `vagrant up m1 m2 w1 w2` to bring one manager and two workers live. Or you can run `vagrant up` to turn on all of the machines.
 
 Once you finish you can run `vagrant halt` to turn down all the virtual machines.
 asf
