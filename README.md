@@ -1,18 +1,22 @@
 # docker-swarm-poc
 
-In order to run vagrant in this example you need to have Virtual Box installed.
+## Requirements:
 
-I am going to detail how to use this script.
+Virtual box and Vagrant installed.
 
-In the vagrant definition, we have a set of managers and worker instances.
+---
 
-The names of the instances are going to be `m1,m2` for the managers and `w1, w2, w3` for the workers.
+## What it is?
 
-Also, we can hit the manager IPs with `192.168.99.20#{1,2}` and the worker IPs with `192.168.99.21#{1,2,3}`, where the sequence number match with the name suffix of the corresponding name.
+It helps to setup your environment to run a docker swarm cluster. It downloads an ubuntu image, creates 4 virtual machines, installs and configure docker on each machine. It assigns certain IPs to each machine that you will use during the session.
 
-For instance, supose I want to refer the manager 1 then the adress of it is `192.168.99.201` or the adress of the worker 3 is `192.168.99.213`.
+## Why it is important?
 
-We are going to run `vagrant up m1 m2 w1 w2` to bring one manager and two workers live. Or you can run `vagrant up` to turn on all of the machines.
+Docker swarm is an easy way set up a cluster and create services. This repo helps to create the environment to run a few virtual machines based on the configuration in Vagrantfile.
 
-Once you finish you can run `vagrant halt` to turn down all the virtual machines.
-asf
+## What to do next?
+
+- clone this repo: git clone `https://github.com/charlyraffellini/docker-swarm-poc.git`.
+- bring up the machines `vagrant up`.
+- wait till vagrant download the ubuntu image and provisioning each machine. It could take 10 minutes or more.
+- to shut down the machines `vagrant halt`
