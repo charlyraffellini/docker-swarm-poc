@@ -33,7 +33,7 @@ $ export DOCKER_HOST=192.168.99.202
 $ docker swarm join --token SWMTKN-1-5sf3tt1gygzgz7vve3f44q9i7k0f0s9mvqzr0lf0ag7fu20nm8-aywh15a240wt81o32zr0xljef 192.168.99.201:2377
 ```
 
-![Alt text](https://docs.docker.com/engine/swarm/images/swarm-diagram.png)
+![Alt text](https://github.com/charlyraffellini/docker-swarm-poc/raw/master/swarm-nodes-managers.png)
 
 #### which are the manager responsibilities?
 
@@ -109,7 +109,7 @@ $ docker service create --name inspector -p 5000:3000 --network backend charlier
 - scale the service `docker service scale inspector=4`
 - run a few times  `curl http://192.168.99.201:5000/`
 
-![routing mesh](https://docs.docker.com/engine/swarm/images/ingress-routing-mesh.png)
+![routing mesh](https://github.com/charlyraffellini/docker-swarm-poc/raw/master/swarm-load-balancer.png)
 
 # how to deploy stack with compose files?
 
