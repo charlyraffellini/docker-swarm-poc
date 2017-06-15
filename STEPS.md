@@ -109,6 +109,8 @@ $ docker service create --name inspector -p 5000:3000 --network backend charlier
 - scale the service `docker service scale inspector=4`
 - run a few times  `curl http://192.168.99.201:5000/`
 
+![routing mesh](https://docs.docker.com/engine/swarm/images/ingress-routing-mesh.png)
+
 # how to deploy stack with compose files?
 
 ```
