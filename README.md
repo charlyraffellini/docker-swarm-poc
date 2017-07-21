@@ -21,3 +21,4 @@ Docker swarm is an easy way set up a cluster and create services. This repo help
 - wait till vagrant download the ubuntu image and provisioning each machine. It could take 10 minutes or more.
 - to connect to any machine run `vagrant ssh <machine name>`. For instance, `vagrant ssh m1`.
 - to shut down the machines `vagrant halt`.
+- Continue with the [exercises](https://github.com/charlyraffellini/docker-swarm-poc/blob/master/STEPS.md).
